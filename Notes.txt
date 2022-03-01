@@ -1,8 +1,0 @@
->>For Add Compiler:
-Make Temp var and add both vars to it. then set the output var to Temp var
-
->>For Vars:
-Make A Scoarboard of type dummy, and call it the var name
-
->>For SetVar
-Use the '=' scoreboard function to set a var or just set it to the int

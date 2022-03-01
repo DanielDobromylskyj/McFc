@@ -1,0 +1,27 @@
+scoreboard objectives add TEMP dummy 
+scoreboard players set #McFc TEMP 0
+
+scoreboard objectives add var1 dummy 
+scoreboard players set #McFc var1 1
+scoreboard objectives add var2 dummy 
+scoreboard players set #McFc var2 2
+scoreboard objectives add var3 dummy 
+scoreboard players set #McFc var3 0
+scoreboard objectives add var4 dummy 
+scoreboard players set #McFc var4 10
+scoreboard players set #McFc TEMP 0
+scoreboard players operation #McFc TEMP += #McFc var1
+scoreboard players operation #McFc TEMP += #McFc var2
+scoreboard players operation #McFc var3 = #McFc TEMP
+scoreboard players set #McFc TEMP 0
+scoreboard players operation #McFc TEMP += #McFc var2
+scoreboard players operation #McFc TEMP -= #McFc var3
+scoreboard players operation #McFc var1 = #McFc TEMP
+scoreboard players set #McFc TEMP 0
+scoreboard players operation #McFc TEMP += #McFc var2
+scoreboard players operation #McFc TEMP *= #McFc var3
+scoreboard players operation #McFc var1 = #McFc TEMP
+scoreboard players set #McFc TEMP 0
+scoreboard players operation #McFc TEMP += #McFc var1
+scoreboard players operation #McFc TEMP /= #McFc var3
+scoreboard players operation #McFc var2 = #McFc TEMP
